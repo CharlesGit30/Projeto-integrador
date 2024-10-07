@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: auto;
+    scroll-behavior: auto;
+    transition: .4s ease linear;
+}
+
+
+
+:root {
+    --bg-color: #005C53;
+    --main-color: #fff;
+    --text-color: #444;
+    --another-color: #047fe4;
+}
+
+body {
+    background: transparent;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.logo span {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+
+.logo strong {
+    color: var(--another-color);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    padding: 33px 9%;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    margin-right: 350px;
+}
+
+.navlist a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 60px;
+}
+
+.navlist a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--another-color);
+}
+
+.menu {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: var(--main-color);
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.text {
+  padding-left: 300px;
+}
+
+.text h4 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.text h1 {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+span {
+    color: var(--another-color);
+}
+
+p {
+    color: #000000;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    position: relative;
+    padding: 10px 22px;
+    background: var(--another-color);
+    border-radius: 6px;
+    color: #fff7f7;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: #000000;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.hero-img img {
+   position: relative;
+   padding-top: 50px;
+}
+
+/* Produtos Page */
+
+.produtos {
+    width: 100%;
+    height: 140vh;
+    padding: 20px 0;
+}
+
+.produtos h1 {
+    margin: 35px 0;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: var(--another-color);
+    position: relative;
+    
+}
+
+.all-produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produto {
+    overflow: hidden;
+    color: #21201e;
+    background: #e9e9e3;
+    text-align: center;
+    height: 340px;
+    width: 300px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    transition: .3s ease;
+}
+
+.produto:hover img {
+   transform: scale(0.9);
+   transition: .5s ease-in;
+}
+
+.produto:hover {
+    box-shadow: 0 8px 25px #eeeeee;
+}
+
+.produto img {
+    height: 200px;
+    width: 250px;
+    border-radius: 15%;
+    transition: .5s ease;
+    object-position: center;
+}
+
+img .img {
+    height: 150px;
+}
+
+/* Nutricionistas Page */
+
+.nutri {
+    width: 100%;
+    height: 90vh;
+}
+
+.nutri h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: var(--another-color);
+    padding-bottom: 20px;
+   
+}
+
+.nutri .nutri-box {
+   width: 95%;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   top: 20%;
+}
+
+.nutri .nutri-box .profile {
+    height: 500px;
+    width: 400px;
+    margin: 0 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+
+.nutri .nutri-box .profile img {
+    height: 250px;
+    width: 320px;
+    overflow: hidden;
+    object-fit: fill;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+    object-position: center;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    
+}
+
+.nutri .nutri-box .profile .info {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 20px;
+}
+
+.nutri .nutri-box .profile .info .nome {
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: #dfb80c;
+    text-decoration-line: underline;
+    line-height: 4;
+    color: #000000;
+}
+
+
+
+.nutri .nutri-box .profile .info .bio {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+.icon-nutri {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #fffff7;
+    margin-bottom: 15px;
+}
+
+.icon-nutri #face {
+    margin-right: 20px;
+    background: #0b29ad;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-nutri #face:hover {
+    transform: scale(1.5);
+    transition: .5s ease;
+}
+
+.icon-nutri #insta {
+    background: darkmagenta;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-nutri #insta:hover {
+    transform: scale(1.5);
+    transition: .5s ease;
+}
+
+.icon-nutri #what {
+    background: green;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.icon-nutri #what:hover {
+    transform: scale(1.5);
+    transition: .5s ease;
+}
+
+/* carrossel */ 
+
+.slide {
+    padding: 60px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slide-logo {
+    display: inline-block;
+    animation: slide 6s linear infinite;
+}
+
+.slide-logo img {
+    margin: 0 40px;
+}
+
+@keyframes slide {
+    0%{
+        transform: translatex(0);
+    }
+    100%{
+        transform: translatex(-100%);
+    }
+}
+
+/* Contato */
+
+.comentario {
+    height: 50vh;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e9e9e3;
+}
+
+.comentario-conteudo {
+    height: 300px;
+    width: 800px;
+    background: #000000;
+    border-radius: 20px;
+}
+
+.comentario-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+}
+
+.comentario-texto h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    position: absolute;
+    left: 0;
+    padding-left: 3rem;
+    padding-top: 7rem;
+    color: #fff;
+}
+
+.comentario-texto p {
+    position: absolute;
+    padding-top: 450px;
+    color: #fff;
+}
+
+form{
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+form input {
+    height: 50px;
+    width: 350px;
+    border: 2px solid #000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+}
+
+form input.btnn {
+    width: 80px;
+    border-radius: 10px;
+    background: var(--another-color);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+form input.btnn:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.copyright {
+    padding-top: 50px;
+}
+
+.fim-texto {
+    padding-left: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #dfb80c;
+}
+
+.fim-img img {
+    height: 100px;
+    padding-left: 50px;
+    padding-top: -50;
+}
+
+@media (max-width: 1589px){
+    
+}

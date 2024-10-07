@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Css Usado-->
+    <link rel="stylesheet" href="pagamento.css">
+
+    <!-- Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+<div class="container">
+
+    <div class="card-container">
+        <div class="front">
+            <div class="image">
+                <img src="Imagens/Figura-Bandeira-de-Cartão-PNG.png" height="200px" alt="">
+            </div>
+        </div>
+    </div>
+       
+     <h3>Gestão de Pagamentos</h3>
+
+    <form action="">
+      <div class="input-box">
+        <span>Numero do Cartão</span>
+         <input type="text" maxlength="16" class="card-number-input">
+      </div>
+
+      <div class="input-box">
+        <span>Titular do Cartão</span>
+        <input type="text" class="card-holder-input">
+      </div>
+ 
+      <div class="flexbox">
+      <div class="input-box">
+        <span>Mes de Expiração</span>
+         <select name="" id="" class="month-input">
+         <option value="month" selected disabled>Mes</option>
+         <option value="01">Janeiro</option>
+         <option value="02">Fevereiro</option>
+         <option value="03">Março</option>
+         <option value="04">Abril</option>
+         <option value="05">Maio</option>
+         <option value="06">Junho</option>
+         <option value="07">Julho</option>
+         <option value="08">Agosto</option>
+         <option value="09">Setembro</option>
+         <option value="10">Outubro</option>
+         <option value="11">Novembro</option>
+         <option value="12">Dezembro</option>
+        </select>
+      </div>
+
+
+      <div class="input-box">
+        <span>Ano de Expiração <span>
+         <select name="" id="" class="year-input">
+         <option value="year" selected disabled>Ano</option>
+         <option value="01">2024</option>
+         <option value="02">2025</option>
+         <option value="03">2026</option>
+         <option value="04">2027</option>
+         <option value="05">2028</option>
+         <option value="06">2029</option>
+         <option value="07">2030</option>
+         <option value="08">2031</option>
+         <option value="09">2032</option>
+         <option value="10">2033</option>
+         <option value="11">2034</option>
+         <option value="12">2035</option>
+        </select>
+      </div>
+
+      <div class="input-box">
+        <span>CVV</span>
+        <input type="text" maxlength="4" class="cvv-input">
+      </div>
+    </div>
+
+    <input type="submit" class="submit-btn" value="submit">
+    </form>
+</div>
+
+    <script src="pagamento.js"></script>
+</body>
+</html>

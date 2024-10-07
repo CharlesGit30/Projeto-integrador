@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.nav {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+h1 {
+    color: Black;
+    margin-right: 50px;
+    font-size: 35PX;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 35px;
+    color: #047fe4;;
+    font-weight: 700;
+    margin-left: 130px;
+    margin-top: px;
+    position: absolute;
+    top: 0;
+}
+.nav.active {
+    width: 50px;
+}
+
+.nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+
+.nav ul li :nth-child(1):hover {
+    background: transparent;
+}
+
+
+.nav ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.nav ul li a .icon {
+    position: relative;
+    display: block;
+    min-height: 60px;
+    height: 60px;
+    line-height: 100px;
+    text-align: start;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.nav ul li a .icon .fa-solid {
+    color: #000000;
+    font-size: 24px;
+    align-items: center;
+}
+
+.nav ul li a .title {
+    position: relative;
+    display: block;
+    padding:  0 60px;
+    align-items: center;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+
+.main {
+    position: absolute;
+    width: calc(100% - 320px);
+    left: 300px;
+    min-height: 100vh;
+    background: #f5f5f5;
+    transition: 0.5s;
+}
+
+.main.active {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.main .topbar {
+    width: 100%;
+    background: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .topbar .toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.toggle::before {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #111;
+}
+
+.search {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.search label {
+    position: relative;
+    width: 100%;
+}
+
+.search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    border: 1px solid #000; 
+}
+
+
+.search label .fa-magnifying-glass {
+    position: absolute;
+    left: 15px;
+    top: 4px;
+    padding-left: 350px;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.user img {
+ border-radius: 40%;
+ position: relative;
+ margin-top: 10px;
+ margin-right: 20px;
+}
+
+
+.cardbox {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.cardbox .card:hover {
+    transform: scale(1.07);
+    box-shadow: -40 5px 25px rgba(0, 0, 0, 0.2);
+    transition: .5s ease;
+}
+
+.cardbox .card {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.cardbox .card .numbers {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cardbox .card .cardname {
+    color: #999;
+}
+
+.cardbox .card .iconbox {
+    font-size: 25px;
+    color: rgb(228, 198, 32);
+}
+
+.graphbox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr,2fr;
+    grid-gap: 30px;
+    min-height: 200px;
+}
+
+.graphbox .box {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    width: 50%;
+    height: 300px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.linearbox .boxx {
+    position: absolute;
+    top: 0;
+    margin-top: 195px;
+    right: 0;
+    bottom: 0;
+    margin-right: 50px;
+    background: #fff;
+    padding: 20px;
+    width: 40%;
+    height: 290px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}
+
+.details {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr,1fr;
+    background: #fffcfc;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.card-header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.card-header .btn {
+    background: orange;
+    color: #fff;
+    border-radius: 5px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.274);
+    margin-bottom: 10px;
+    height: 50px;
+ }
+
+.details .recentorders {
+    position: relative;
+    display: grid;
+    min-height: 400px;
+    width: 70%;
+    margin-top: 600px;
+}
+
+.detail table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 200px;
+} 
+
+
+table tr th {
+    background: #f3e685;
+}
+
+
+tbody tr td {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+td .detalhes {
+    height: 50px;
+    width: 110px;
+    background: green;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: 2px;
+    margin-left: 10px;
+}
+
+
+td .detalhes:hover {
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+td .detalhes-1{
+    height: 50px;
+    width: 110px;
+    background: rgb(173, 0, 0);
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: 2px;
+    margin-left: 10px;
+}
+td .detalhes-1:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+td .detalhes-1 i{
+    margin-left: 5px;
+}
+
+td .detalhes i{
+  margin-left: 10px;
+}
+
+.recentcustomers {
+    width: 100%;
+    height: 100px;
+    
+}
+
+.recentcustomers .card-custom h2 {
+    font-size: 24px; 
+    color: rgb(11, 14, 11);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding-top: 20px;
+}
+
+ .btnn {
+    background: orange;
+    color: #fff;
+    border-radius: 5px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.274);
+    height: 50px;
+    position: absolute;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    right: 0;
+    top: auto;
+    margin-top: -40px;
+}
+
+.btnn:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+.customers {
+    display: flex;
+    padding-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.274);
+}
+
+.customers img {
+    height: 150px;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    float: left;
+    margin-left: 20px;
+}
+
+.customers .description p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 150px;
+    align-items: center;
+    color: rgb(88, 88, 82);
+}
+
+.customers .description h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 110px;
+    color: #041602;
+}
+
+.customers .description .rio {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 140px;
+    color: #041602;
+
+}
+
+.customers .botao {
+    background: green;
+    height: 40px;
+    width: 100px;
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.200);
+}
+
+.customers .botao1{
+    background: rgb(117, 14, 10);
+    height: 40px;
+    width: 100px;
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.200);
+}
+
+.customers .botao1:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.customers .botao:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+@media (max-width: 1390px) {
+    .boxx{
+      margin-top: 500px;
+    }
+}

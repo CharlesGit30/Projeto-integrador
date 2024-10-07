@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav">
+            <ul>
+            <li>
+                <a href="index.html">
+                <span class="icon"><i class="fa-solid fa-dumbbell" aria-hidden="true"></i></span>
+                <span class="title"><h1>Energy</h1><h2>Fit</h2></span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+                <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fa-solid fa-users" aria-hidden="true"></i></span>
+                <span class="title">Clientes</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fa-solid fa-message" aria-hidden="true"></i></span>
+                <span class="title">Mensagens</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                <span class="title">Ajuda</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fa-solid fa-gear" aria-hidden="true"></i></span>
+                <span class="title">Configurações</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fa-solid fa-unlock" aria-hidden="true"></i></span>
+                <span class="title">Senhas</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i></span>
+                <span class="title">Inscrever-Se</span>
+                </a>
+            </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="togglemenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Procure Aqui">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="shopimg/emoji.webp" height="40px" alt="">
+                </div>
+            </div>
+
+            <div class="cardbox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">9.750</div>
+                        <div class="cardname">Total de Visualizações</div>
+                    </div>
+                    <div class="iconbox">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">2,500</div>
+                        <div class="cardname">Total de Vendas</div>
+                    </div>
+                    <div class="iconbox">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">4.300</div>
+                        <div class="cardname">Comentarios</div>
+                    </div>
+                    <div class="iconbox">
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+               </div>
+
+                     
+                <div class="card">
+                        <div>
+                            <div class="numbers">12.600</div>
+                            <div class="cardname">Lucros</div>
+                        </div>
+                        <div class="iconbox">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                </div>
+        </div>
+
+        <div class="graphbox">
+            <div class="box">
+                <canvas id="myChart"></canvas>
+            </div>
+            
+        </div>
+
+        <div class="linearbox">
+            <div class="boxx">
+                <canvas id="myChartt"></canvas>
+            </div>
+            
+        </div>
+
+
+
+        <div class="details">
+
+
+            <div class="card-header">
+                <h2>Pedidos</h2>
+                <a href="#" class="btn">Ver Tudo</a>
+            </div>
+            
+            
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pedidos</th>
+                        <th>Preços</th>
+                        <th>Situação</th>
+                        <th>Encaminhamento</th>
+                        <th>Ultima Atualização</th>
+                        <th>Concluido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Esteira Moderna</td>
+                        <td>3.199.00</td>
+                        <td>Paga</td>
+                        <td><span class="delivered">Entregue</span></td> 
+                        <td>Ontem</td>
+                        <td><button class="detalhes">Detalhes<i class="fa-solid fa-arrow-up-from-bracket"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Camiseta Fit Feminina</td>
+                        <td>49.90</td>
+                        <td>Paga</td>
+                        <td><span class="delivered">Pendente</span></td> 
+                        <td>Hoje</td>
+                        <td><button class="detalhes-1">Em Espera<i class="fa-solid fa-arrow-up-from-bracket"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Garrafa Termica</td>
+                         <td>69.90</td>
+                        <td>Paga</td>
+                        <td><span class="delivered">Entregue</span></td>
+                        <td>Há uma Semana</td> 
+                        <td><button class="detalhes">Detalhes<i class="fa-solid fa-arrow-up-from-bracket"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>Tecnologia VR</td>
+                         <td>1.199.00</td>
+                        <td>Paga</td>
+                        <td><span class="delivered">Pendente</span></td>
+                        <td>Há Dois Dias Atrás </td>
+                        <td><button class="detalhes-1">Em Espera<i class="fa-solid fa-arrow-up-from-bracket"></i></button></td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+
+            <div class="recentcustomers">
+                <div class="card-custom">
+                    <h2>Clientes Recentes</h2>
+                    <a href="#" class="btnn">Ver Tudo</a>
+                   </div>
+                </div>
+            <div class="customers">
+                
+                <img src="assets/pexels-cristian-rojas-7535477.jpg" height="100px" alt="">
+                <div class="description">
+                    <p>Diana</p>
+                    <h4>Rio Grande do Sul</h4>
+                    <button class="botao">Inativo</button>
+                </div>
+            </div>
+
+            <div class="customers">
+                
+                <img src="assets/pexels-cristian-rojas-8446858.jpg" height="100px" alt="">
+                <div class="description">
+                    <p>Laura</p>
+                    <h4 class="rio">São Paulo</h4>
+                    <button class="botao1">Inativo</button>
+                </div>
+            </div>
+
+            <div class="customers">
+                
+                <img src="assets/pexels-kampus-5935271.jpg" height="100px" alt="">
+                <div class="description">
+                    <p>Maria</p>
+                    <h4 >Rio de Janeiro</h4>
+                    <button class="botao">Inativo</button>
+                </div>
+        </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+    <script>
+        function togglemenu() {
+          let toggle = document.querySelector('.toggle');
+          let nav = document.querySelector('.nav');
+          let main = document.querySelector('.main');
+          toggle.classList.toggle('active');
+          nav.classList.toggle('active');
+          main.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
